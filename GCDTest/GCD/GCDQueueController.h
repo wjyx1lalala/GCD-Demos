@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GCDQueueController.h
 //  GCDTest
 //
 //  Created by wjyx on 2018/12/17.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface GCDQueueController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

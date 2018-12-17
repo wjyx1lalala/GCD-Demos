@@ -8,24 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		DC4395D021C7E273007CDA88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4395CF21C7E273007CDA88 /* AppDelegate.m */; };
-		DC4395D321C7E273007CDA88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4395D221C7E273007CDA88 /* ViewController.m */; };
 		DC4395D621C7E273007CDA88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4395D421C7E273007CDA88 /* Main.storyboard */; };
 		DC4395D821C7E274007CDA88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4395D721C7E274007CDA88 /* Assets.xcassets */; };
 		DC4395DB21C7E274007CDA88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4395D921C7E274007CDA88 /* LaunchScreen.storyboard */; };
 		DC4395DE21C7E274007CDA88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4395DD21C7E274007CDA88 /* main.m */; };
+		DC4395E821C7E349007CDA88 /* GCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4395E721C7E349007CDA88 /* GCDController.m */; };
+		DC4395EB21C7E37B007CDA88 /* NSOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4395EA21C7E37B007CDA88 /* NSOperationController.m */; };
+		DC4395EE21C7E4D6007CDA88 /* GCDQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4395ED21C7E4D6007CDA88 /* GCDQueueController.m */; };
+		DC4395F121C7E4E5007CDA88 /* GCDGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4395F021C7E4E5007CDA88 /* GCDGroupController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC4395CB21C7E273007CDA88 /* GCDTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4395CE21C7E273007CDA88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC4395CF21C7E273007CDA88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DC4395D121C7E273007CDA88 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DC4395D221C7E273007CDA88 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DC4395D521C7E273007CDA88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC4395D721C7E274007CDA88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4395DA21C7E274007CDA88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4395DC21C7E274007CDA88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4395DD21C7E274007CDA88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC4395E621C7E349007CDA88 /* GCDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDController.h; sourceTree = "<group>"; };
+		DC4395E721C7E349007CDA88 /* GCDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDController.m; sourceTree = "<group>"; };
+		DC4395E921C7E37B007CDA88 /* NSOperationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationController.h; sourceTree = "<group>"; };
+		DC4395EA21C7E37B007CDA88 /* NSOperationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationController.m; sourceTree = "<group>"; };
+		DC4395EC21C7E4D6007CDA88 /* GCDQueueController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDQueueController.h; sourceTree = "<group>"; };
+		DC4395ED21C7E4D6007CDA88 /* GCDQueueController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDQueueController.m; sourceTree = "<group>"; };
+		DC4395EF21C7E4E5007CDA88 /* GCDGroupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDGroupController.h; sourceTree = "<group>"; };
+		DC4395F021C7E4E5007CDA88 /* GCDGroupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDGroupController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,10 @@
 		DC4395CD21C7E273007CDA88 /* GCDTest */ = {
 			isa = PBXGroup;
 			children = (
+				DC4395E521C7E33B007CDA88 /* NSOperation */,
+				DC4395E421C7E329007CDA88 /* GCD */,
 				DC4395CE21C7E273007CDA88 /* AppDelegate.h */,
 				DC4395CF21C7E273007CDA88 /* AppDelegate.m */,
-				DC4395D121C7E273007CDA88 /* ViewController.h */,
-				DC4395D221C7E273007CDA88 /* ViewController.m */,
 				DC4395D421C7E273007CDA88 /* Main.storyboard */,
 				DC4395D721C7E274007CDA88 /* Assets.xcassets */,
 				DC4395D921C7E274007CDA88 /* LaunchScreen.storyboard */,
@@ -69,6 +78,28 @@
 				DC4395DD21C7E274007CDA88 /* main.m */,
 			);
 			path = GCDTest;
+			sourceTree = "<group>";
+		};
+		DC4395E421C7E329007CDA88 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				DC4395E621C7E349007CDA88 /* GCDController.h */,
+				DC4395E721C7E349007CDA88 /* GCDController.m */,
+				DC4395EC21C7E4D6007CDA88 /* GCDQueueController.h */,
+				DC4395ED21C7E4D6007CDA88 /* GCDQueueController.m */,
+				DC4395EF21C7E4E5007CDA88 /* GCDGroupController.h */,
+				DC4395F021C7E4E5007CDA88 /* GCDGroupController.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		DC4395E521C7E33B007CDA88 /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				DC4395E921C7E37B007CDA88 /* NSOperationController.h */,
+				DC4395EA21C7E37B007CDA88 /* NSOperationController.m */,
+			);
+			path = NSOperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4395D321C7E273007CDA88 /* ViewController.m in Sources */,
+				DC4395EB21C7E37B007CDA88 /* NSOperationController.m in Sources */,
+				DC4395EE21C7E4D6007CDA88 /* GCDQueueController.m in Sources */,
 				DC4395DE21C7E274007CDA88 /* main.m in Sources */,
+				DC4395E821C7E349007CDA88 /* GCDController.m in Sources */,
+				DC4395F121C7E4E5007CDA88 /* GCDGroupController.m in Sources */,
 				DC4395D021C7E273007CDA88 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GCDTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GCDTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
