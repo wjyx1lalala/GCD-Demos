@@ -11,7 +11,6 @@
 @interface GCDController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
 @property (nonatomic,strong) NSArray * list;
-
 @end
 
 @implementation GCDController
@@ -19,21 +18,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"GCD-Demos";
+    [self initSubView];
+}
+
+- (void)initSubView{
     self.list = @[
-      @{@"title":@"DISPATCH_QUEUE_SERIAL",@"vc":@"GCDQueueController"},
-      @{@"title":@"DISPATCH_QUEUE_CONCURRENT",@"vc":@"GCDQueueController"},
-      @{@"title":@"dispatch_sync",@"vc":@"GCDQueueController"},
-      @{@"title":@"dispatch_async",@"vc":@"GCDQueueController"},
-      @{@"title":@"dispatch_once",@"vc":@"GCDQueueController"},
-      @{@"title":@"dispatch_after",@"vc":@"GCDQueueController"},
-      @{@"title":@"dispatch_group_t",@"vc":@"GCDGroupController"},
-      ];
+                  @{@"title":@"DISPATCH_QUEUE_SERIAL",@"vc":@"GCDQueueController"},
+                  @{@"title":@"DISPATCH_QUEUE_CONCURRENT",@"vc":@"GCDQueueController"},
+                  @{@"title":@"dispatch_sync",@"vc":@"GCDQueueController"},
+                  @{@"title":@"dispatch_async",@"vc":@"GCDQueueController"},
+                  @{@"title":@"dispatch_once",@"vc":@"GCDQueueController"},
+                  @{@"title":@"dispatch_after",@"vc":@"GCDQueueController"},
+                  @{@"title":@"dispatch_group_t",@"vc":@"GCDGroupController"},
+                  ];
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.rowHeight = 55;
     self.tableView.tableFooterView = [UIView new];
     [self.view addSubview:self.tableView];
+    self.view.backgroundColor = UIColor.whiteColor;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
